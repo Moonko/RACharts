@@ -3,7 +3,7 @@ import UIKit
 private let legendXHeight: CGFloat = 20
 private let detailsViewOffset: CGFloat = 12
 
-final class NewChartView: UIView {
+final class ChartView: UIView {
 
     // MARK: Properties
 
@@ -730,7 +730,7 @@ final class NewChartView: UIView {
     }
 }
 
-extension NewChartView: UIGestureRecognizerDelegate {
+extension ChartView: UIGestureRecognizerDelegate {
 
     override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         guard gestureRecognizer === panGestureRecognizer

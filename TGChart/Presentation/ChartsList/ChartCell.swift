@@ -9,7 +9,7 @@ private let selectId = "select"
 
 final class ChartCell: UITableViewCell {
 
-    private let chartView: NewChartView
+    private let chartView: ChartView
     private let intervalView: ChartIntervalView
     private let selectorCollectionView: UICollectionView
 
@@ -37,7 +37,7 @@ final class ChartCell: UITableViewCell {
             return iter.offset
         }))
 
-        chartView = NewChartView(
+        chartView = ChartView(
             insets: chartInsets,
             yCalculator: calculator,
             chartRenderer: chartRenderer,
@@ -47,7 +47,7 @@ final class ChartCell: UITableViewCell {
         )
         chartView.setDataSet(dataSet)
         intervalView = ChartIntervalView(
-            chartView: NewChartView(
+            chartView: ChartView(
                 insets: intervalInsets,
                 yCalculator: calculator,
                 chartRenderer: intervalChartRenderer,

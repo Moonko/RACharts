@@ -41,12 +41,11 @@
 		62D00A332243101700512915 /* UIEffectView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D00A322243101700512915 /* UIEffectView+Theme.swift */; };
 		62D00A372243BBA500512915 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 62D00A352243BBA500512915 /* SimpleFragment.glsl */; };
 		62D00A382243BBA500512915 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 62D00A362243BBA500512915 /* SimpleVertex.glsl */; };
-		62E4BA8C224038270055BE2C /* LayerY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E4BA8B224038270055BE2C /* LayerY.swift */; };
 		62E7C6A2225A44C6000B857B /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C69E225A44C6000B857B /* ChartCell.swift */; };
 		62E7C6A3225A44C6000B857B /* ChartsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C69F225A44C6000B857B /* ChartsListTableViewController.swift */; };
 		62E7C6A4225A44C6000B857B /* DataSelectorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6A0225A44C6000B857B /* DataSelectorCollectionViewCell.swift */; };
 		62E7C6A5225A44C6000B857B /* DataSelectorFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6A1225A44C6000B857B /* DataSelectorFlowLayout.swift */; };
-		62E7C6A9225A4665000B857B /* NewChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6A8225A4665000B857B /* NewChartView.swift */; };
+		62E7C6A9225A4665000B857B /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6A8225A4665000B857B /* ChartView.swift */; };
 		62E7C6AC225A48C3000B857B /* LegendYRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6AB225A48C3000B857B /* LegendYRenderer.swift */; };
 		62E7C6AF225A5474000B857B /* IntervalY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6AE225A5474000B857B /* IntervalY.swift */; };
 		62E7C6B1225A5517000B857B /* LegendXRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7C6B0225A5517000B857B /* LegendXRenderer.swift */; };
@@ -104,12 +103,11 @@
 		62D00A322243101700512915 /* UIEffectView+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEffectView+Theme.swift"; sourceTree = "<group>"; };
 		62D00A352243BBA500512915 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		62D00A362243BBA500512915 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
-		62E4BA8B224038270055BE2C /* LayerY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerY.swift; sourceTree = "<group>"; };
 		62E7C69E225A44C6000B857B /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
 		62E7C69F225A44C6000B857B /* ChartsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsListTableViewController.swift; sourceTree = "<group>"; };
 		62E7C6A0225A44C6000B857B /* DataSelectorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSelectorCollectionViewCell.swift; sourceTree = "<group>"; };
 		62E7C6A1225A44C6000B857B /* DataSelectorFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSelectorFlowLayout.swift; sourceTree = "<group>"; };
-		62E7C6A8225A4665000B857B /* NewChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChartView.swift; sourceTree = "<group>"; };
+		62E7C6A8225A4665000B857B /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		62E7C6AB225A48C3000B857B /* LegendYRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendYRenderer.swift; sourceTree = "<group>"; };
 		62E7C6AE225A5474000B857B /* IntervalY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalY.swift; sourceTree = "<group>"; };
 		62E7C6B0225A5517000B857B /* LegendXRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendXRenderer.swift; sourceTree = "<group>"; };
@@ -141,13 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62087CA5223903CC00B91E1D /* Chart */ = {
+		622951C02276089900D33B45 /* Animator */ = {
 			isa = PBXGroup;
 			children = (
-				624BF890223D1CA300F095F4 /* IntervalView */,
-				62D00A2A2242C13000512915 /* ChartDetailsView.swift */,
+				62385A25224586310084B706 /* Animator.swift */,
+				62385A27224587DB0084B706 /* IntervalYAnimator.swift */,
+				62385A292245932E0084B706 /* AlphaAnimator.swift */,
 			);
-			path = Chart;
+			path = Animator;
 			sourceTree = "<group>";
 		};
 		624BF890223D1CA300F095F4 /* IntervalView */ = {
@@ -185,14 +184,6 @@
 			path = TGChart;
 			sourceTree = "<group>";
 		};
-		6283CCD022352C900004BE12 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-				6283CCF12235738B0004BE12 /* View */,
-			);
-			path = Sample;
-			sourceTree = "<group>";
-		};
 		6283CCD322353CD50004BE12 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,24 +205,11 @@
 		6283CCD522353CF00004BE12 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				62E7C6A7225A4657000B857B /* NewChart */,
+				62E7C6A7225A4657000B857B /* Chart */,
 				62E7C69D225A44C6000B857B /* ChartsList */,
-				62087CA5223903CC00B91E1D /* Chart */,
-				6283CCD6223540B40004BE12 /* View */,
-				6283CCD022352C900004BE12 /* Sample */,
-				62385A25224586310084B706 /* Animator.swift */,
-				62385A27224587DB0084B706 /* IntervalYAnimator.swift */,
-				62385A292245932E0084B706 /* AlphaAnimator.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		6283CCD6223540B40004BE12 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				6283CCDA223540E60004BE12 /* Theme */,
 			);
-			path = View;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		6283CCDA223540E60004BE12 /* Theme */ = {
@@ -273,18 +251,10 @@
 			path = Themes;
 			sourceTree = "<group>";
 		};
-		6283CCF12235738B0004BE12 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				62CE8E212236F3970090DBF2 /* HeaderView.swift */,
-				62E4BA8B224038270055BE2C /* LayerY.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		62E7C69D225A44C6000B857B /* ChartsList */ = {
 			isa = PBXGroup;
 			children = (
+				62CE8E212236F3970090DBF2 /* HeaderView.swift */,
 				62E7C69E225A44C6000B857B /* ChartCell.swift */,
 				62E7C69F225A44C6000B857B /* ChartsListTableViewController.swift */,
 				62E7C6A0225A44C6000B857B /* DataSelectorCollectionViewCell.swift */,
@@ -293,16 +263,19 @@
 			path = ChartsList;
 			sourceTree = "<group>";
 		};
-		62E7C6A7225A4657000B857B /* NewChart */ = {
+		62E7C6A7225A4657000B857B /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				622951C02276089900D33B45 /* Animator */,
+				624BF890223D1CA300F095F4 /* IntervalView */,
 				62E7C6B8225A6235000B857B /* Calculators */,
 				62E7C6B2225A5FBC000B857B /* Renderers */,
-				62E7C6A8225A4665000B857B /* NewChartView.swift */,
+				62E7C6A8225A4665000B857B /* ChartView.swift */,
 				62E7C6AE225A5474000B857B /* IntervalY.swift */,
 				62E7C6D3225B834A000B857B /* Viewport.swift */,
+				62D00A2A2242C13000512915 /* ChartDetailsView.swift */,
 			);
-			path = NewChart;
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		62E7C6AA225A48AC000B857B /* LegendYRenderer */ = {
@@ -446,12 +419,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62E7C6B1225A5517000B857B /* LegendXRenderer.swift in Sources */,
-				62E4BA8C224038270055BE2C /* LayerY.swift in Sources */,
 				62E7C6BE225A6AB3000B857B /* FloatingLegendXRenderer.swift in Sources */,
 				62D00A332243101700512915 /* UIEffectView+Theme.swift in Sources */,
 				6283CCF022356E450004BE12 /* NSObject+Palette.swift in Sources */,
 				62E7C6B7225A6078000B857B /* ChartRenderer.swift in Sources */,
-				62E7C6A9225A4665000B857B /* NewChartView.swift in Sources */,
+				62E7C6A9225A4665000B857B /* ChartView.swift in Sources */,
 				62D00A2B2242C13000512915 /* ChartDetailsView.swift in Sources */,
 				62CE8E1C223658B10090DBF2 /* UINavigationBar+Theme.swift in Sources */,
 				62E7C6A2225A44C6000B857B /* ChartCell.swift in Sources */,

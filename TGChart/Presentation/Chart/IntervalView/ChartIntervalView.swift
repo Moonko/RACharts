@@ -36,7 +36,7 @@ class ChartIntervalView: UIView {
         }
     }
 
-    let chartView: NewChartView
+    let chartView: ChartView
 
     private let controlView = ControlView()
 
@@ -53,7 +53,7 @@ class ChartIntervalView: UIView {
     private var leftArrowPanRecognizer: UIPanGestureRecognizer!
     private var rightArrowPanRecognizer: UIPanGestureRecognizer!
 
-    init(chartView: NewChartView) {
+    init(chartView: ChartView) {
         self.chartView = chartView
 
         super.init(frame: .zero)
