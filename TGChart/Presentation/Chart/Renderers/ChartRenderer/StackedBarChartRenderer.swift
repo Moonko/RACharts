@@ -33,7 +33,7 @@ final class StackedBarChartRenderer: GLKView, ChartRenderer {
 
         backgroundColor = .clear
 
-        drawableMultisample = .multisample4X
+//        drawableMultisample = .multisample4X
 
         let eaglContext = EAGLContext(api: .openGLES2)!
         EAGLContext.setCurrent(eaglContext)
@@ -45,9 +45,9 @@ final class StackedBarChartRenderer: GLKView, ChartRenderer {
         glAttachShader(programHandle, vertexShader)
         glAttachShader(programHandle, fragmentShader)
         glLinkProgram(programHandle)
-
-        glEnable(GLenum(GL_BLEND))
-        glBlendFuncSeparate(GLenum(GL_SRC_ALPHA), GLenum(GL_ONE_MINUS_SRC_ALPHA), GLenum(GL_ONE), GLenum(GL_ONE_MINUS_SRC_ALPHA));
+//
+//        glEnable(GLenum(GL_BLEND))
+//        glBlendFuncSeparate(GLenum(GL_SRC_ALPHA), GLenum(GL_ONE_MINUS_SRC_ALPHA), GLenum(GL_ONE), GLenum(GL_ONE_MINUS_SRC_ALPHA));
     }
 
     required init?(coder aDecoder: NSCoder) {

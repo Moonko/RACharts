@@ -46,8 +46,8 @@ final class PercentStackedAreaChartRenderer: GLKView, ChartRenderer {
         glAttachShader(programHandle, fragmentShader)
         glLinkProgram(programHandle)
 
-        glEnable(GLenum(GL_BLEND))
-        glBlendFuncSeparate(GLenum(GL_SRC_ALPHA), GLenum(GL_ONE_MINUS_SRC_ALPHA), GLenum(GL_ONE), GLenum(GL_ONE_MINUS_SRC_ALPHA));
+//        glEnable(GLenum(GL_BLEND))
+//        glBlendFuncSeparate(GLenum(GL_SRC_ALPHA), GLenum(GL_ONE_MINUS_SRC_ALPHA), GLenum(GL_ONE), GLenum(GL_ONE_MINUS_SRC_ALPHA));
     }
 
     required init?(coder aDecoder: NSCoder) {
