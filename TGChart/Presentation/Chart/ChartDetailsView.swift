@@ -120,7 +120,7 @@ class ChartDetailsView: UIVisualEffectView {
             let percentText = NSMutableAttributedString()
             let sum = values.reduce(0, +)
             values
-                .map { Int(round(($0 / sum) * 100)) }
+                .map { Int(round(($0 / sum) * 100.0)) }
                 .enumerated()
                 .forEach {
                     percentText.append(NSAttributedString(
