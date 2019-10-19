@@ -4,7 +4,13 @@ struct LightTheme: Theme {
 
     let name = "Day"
 
-    let statusBarStyle: UIStatusBarStyle = .default
+    let statusBarStyle: UIStatusBarStyle = {
+        if #available(iOS 13, *) {
+            return .darkContent
+        } else {
+            return .default
+        }
+    }()
 
     let barStyle: UIBarStyle = .default
 
